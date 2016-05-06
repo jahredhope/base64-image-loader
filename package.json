@@ -1,0 +1,12 @@
+{
+  "name": "base64-image-loader",
+  "version": "0.0.1",
+  "description": "base64 image loader for webpack",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jahredhope/base64-image-loader.git"
+  },
+  "main": "index.js",
+  "author": "Jahred Hope <jahredhope@gmail.com>",
+  "license": "MIT"
+}
