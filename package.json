@@ -6,7 +6,24 @@
     "type": "git",
     "url": "https://github.com/jahredhope/base64-image-loader.git"
   },
+  "keywords": [
+    "base64",
+    "image",
+    "webpack",
+    "loader",
+    "img",
+    "src",
+    "img src"
+  ],
+  "bugs": "https://github.com/jahredhope/base64-image-loader/issues",
   "main": "index.js",
   "author": "Jahred Hope <jahredhope@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.11.0",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "mocha": "^2.5.3"
+  }
 }
