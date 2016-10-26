@@ -1,20 +1,14 @@
 'use strict';
 
+const mimes = require('./mimes.json');
+
 function getMime(path) {
-  var extension = path.split('.').pop();
-  if (['svg', 'jpg', 'jpeg', 'webp', 'gif', 'png'].indexOf(extension) === -1) {
-    throw new Error('Unsupported type of image');
+  const extension = path.split('.').pop();
+  const mime = mimes[extension];
+  if (!mime) {
+    throw new Error('Unsupported type of image of extension ' + extension + ': ' + path);
   }
-  
-  if (extension == 'svg') {
-    return 'image/svg+xml';
-  }
-  
-  if (extension == 'jpg') {
-    return 'image/jpeg';
-  }
-  
-  return 'image/' + extension;
+  return mime;
 }
 
 module.exports = function base64ImageLoader(content) {
