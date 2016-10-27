@@ -17,6 +17,11 @@ document.write('<img src="' + fileAsBase64Src + '" />';
 
 [Documentation: Using loaders](http://webpack.github.io/docs/using-loaders.html)
 
+## Support
+
+See ./mimes.json for currently supported extensions/mimes.  
+Create a Pull Request if you need more added.  
+
 ## License
 
 MIT (http://www.opensource.org/licenses/mit-license.php)

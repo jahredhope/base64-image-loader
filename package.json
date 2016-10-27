@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/jahredhope/base64-image-loader.git"
   },
+  "scripts": {
+    "test": "mocha"
+  },
   "keywords": [
     "base64",
     "image",

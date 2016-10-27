@@ -19,7 +19,7 @@ describe('testImageBase64', () => {
     const thisObj = { resourcePath: 'filename.jpg' };
     const result = base64ImageLoader.call(thisObj, new Buffer(''));
 
-    assert.include(result, 'image/jpg');
+    assert.include(result, 'image/jpeg');
   });
 
   it('should set extension for png', () => {
@@ -27,6 +27,19 @@ describe('testImageBase64', () => {
     const result = base64ImageLoader.call(thisObj, new Buffer(''));
 
     assert.include(result, 'image/png');
+  });
+
+  it('should set extension for svg', () => {
+    const thisObj = { resourcePath: 'filename.svg' };
+    const result = base64ImageLoader.call(thisObj, new Buffer(''));
+
+    assert.include(result, 'image/svg+xml');
+  });
+
+  it('should throw an error on unknown file extension', () => {
+    const thisObj = { resourcePath: 'filename.bad' };
+
+    assert.throws(base64ImageLoader.bind(thisObj, new Buffer('')));
   });
 
   it('output the base64 of the test image', () => {

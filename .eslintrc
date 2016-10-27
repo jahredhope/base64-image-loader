@@ -6,6 +6,7 @@
   rules: {
     "no-unused-expressions": [2, { "allowShortCircuit": true }],
     "max-len": [1, 200],
+    "prefer-template": 0
 
   }
 }
