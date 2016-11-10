@@ -52,4 +52,15 @@ describe('testImageBase64', () => {
 
     assert.include(result, testImageBase64);
   });
+
+  it('case insensitive extension matching', () => {
+    const testImage = fs.readFileSync('./test/1x1.png');
+    const testImageBase64 = 'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAMSURBVBhXY/j//z8ABf4C/qc1gYQAAAAASUVORK5CYII='; // eslint-disable-line max-len
+
+    const thisObj = { resourcePath: 'filename.pNG' };
+
+    const result = base64ImageLoader.call(thisObj, testImage);
+
+    assert.include(result, testImageBase64);
+  });
 });
