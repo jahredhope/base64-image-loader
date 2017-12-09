@@ -1,5 +1,7 @@
 # base64 image loader for webpack
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jahredhope/base64-image-loader.svg)](https://greenkeeper.io/)
+
 ![](https://travis-ci.org/jahredhope/base64-image-loader.svg?branch=master)
 
 Easily switched out for a url loader this loader can be injected directly into an img src tag
