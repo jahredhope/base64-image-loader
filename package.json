@@ -7,7 +7,11 @@
     "url": "https://github.com/jahredhope/base64-image-loader.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "precommit": "lint-staged",
+    "format": "npm run staged-format \"**/*.js\"",
+    "staged-format": "prettier --single-quote --write",
+    "commitmsg": "commitlint -e"
   },
   "keywords": [
     "base64",
@@ -18,15 +22,30 @@
     "src",
     "img src"
   ],
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "npm run staged-format",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "bugs": "https://github.com/jahredhope/base64-image-loader/issues",
   "main": "index.js",
   "author": "Jahred Hope <jahredhope@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@commitlint/cli": "^5.2.5",
+    "@commitlint/config-angular": "^5.1.1",
     "chai": "^4.1.2",
+    "commitlint": "^5.2.5",
     "eslint": "^4.13.0",
     "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
-    "mocha": "^4.0.1"
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "mocha": "^4.0.1",
+    "prettier": "1.9.1"
   }
 }
