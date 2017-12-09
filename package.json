@@ -23,10 +23,10 @@
   "author": "Jahred Hope <jahredhope@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "eslint": "^2.11.0",
-    "eslint-config-airbnb-base": "^3.0.1",
-    "eslint-plugin-import": "^1.8.1",
-    "mocha": "^2.5.3"
+    "chai": "^4.1.2",
+    "eslint": "^4.13.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1"
   }
 }
