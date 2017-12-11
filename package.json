@@ -27,11 +27,16 @@
   "main": "index.js",
   "author": "Jahred Hope <jahredhope@gmail.com>",
   "license": "MIT",
+  "peerDependencies": {
+    "webpack": "^3.10.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^5.2.5",
     "@commitlint/config-angular": "^5.1.1",
     "chai": "^4.1.2",
+    "clean-webpack-plugin": "^0.1.17",
     "commitlint": "^5.2.5",
+    "deep-assign": "^2.0.0",
     "eslint": "^4.13.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -39,6 +44,12 @@
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "mocha": "^4.0.1",
-    "prettier": "1.9.1"
+    "prettier": "1.9.1",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "file-loader": "^1.1.5",
+    "loader-utils": "^1.1.0",
+    "mime-types": "^2.1.17"
   }
 }

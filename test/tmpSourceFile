@@ -1,0 +1,4 @@
+
+  import base64StringOfImage from './1x1.png';
+  console.log(base64StringOfImage);
+  
