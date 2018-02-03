@@ -29,7 +29,7 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^6.0.0",
-    "@commitlint/config-angular": "^5.1.1",
+    "@commitlint/config-angular": "^6.1.0",
     "chai": "^4.1.2",
     "commitlint": "^6.0.0",
     "eslint": "^4.13.0",
