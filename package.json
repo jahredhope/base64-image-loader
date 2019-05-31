@@ -28,7 +28,7 @@
   "author": "Jahred Hope <jahredhope@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^6.0.0",
+    "@commitlint/cli": "^8.0.0",
     "@commitlint/config-angular": "^5.1.1",
     "chai": "^4.1.2",
     "commitlint": "^6.0.0",
